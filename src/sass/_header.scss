@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: head;
+    font-size: 3rem;
+    padding: 2rem;
+    border-bottom: $color-grey-dark-2 2px solid;
+    margin-bottom: 4rem;
+    background-image:linear-gradient(to top, rgba($color-red-light, .5), 
+     rgba($color-red-dark, 1));
+
+    &__title{
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: $font-primary;
+    color: #fff;
+
+    }
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+    &__item{
+                
+        padding: 1rem 2rem;
+        transition: all .7s;
+        
+        &:hover{
+            background-color: var(--color-primary);
+            }
+    }
+    
+
+    &__link,
+    &__link:link,
+    &__link:active{
+
+        text-decoration: none;
+        color: #fff;
+        transition: all .5s;
+                        
+        &:hover{
+            color: $color-grey-dark-2;
+        text-shadow: .5px .5px #fff;
+
+                            }
+    }
+
+}

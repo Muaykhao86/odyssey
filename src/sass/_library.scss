@@ -1,0 +1,32 @@
+.library{
+    grid-column: 2 / 4;
+    background-image: radial-gradient(center, rgba($color-red-light, .5), 
+        rgba($color-red-dark, 1));;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+&__title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 3rem;
+}
+
+&__list{
+    padding: 3rem;
+}
+
+&__item{
+    padding: 2rem;
+    font-size: 3rem;
+   list-style: none;
+    
+}
+
+&__link{
+    text-decoration: none;
+    color: #fff;
+}
+}

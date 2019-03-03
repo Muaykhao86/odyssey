@@ -1,0 +1,66 @@
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #AB3232;
+
+$color-red-dark: #5C0505;
+$color-red-light: #CD4E4E;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    
+    background-image: linear-gradient(
+    to right bottom, 
+    rgba(0, 0, 0, 0.8),
+    rgba(0,0,0, 0.8)), 
+    url(../img/LogoIsh.jpg);
+    background-size: cover;
+    background-position: fixed;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 25% 25% 1fr;
+    grid-template-rows: auto;
+    gap:1rem;
+    grid-template-areas: 
+    "head head head head"
+    "tech tech tech tech"
+    ".... .... .... .... "
+   
+
+
+
+//Grid => Think responsive from the start of the project / columns are always more important than rows => can leave it at content height most of the time
+
+    
+//  & > *{//testing
+//      padding: 7rem;
+//      font-size: 3rem;
+//  }
+}

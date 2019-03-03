@@ -1,0 +1,155 @@
+
+.input-reset {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+}
+
+.input-reset::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    transition: color .15s ease-in;
+    color: #fff;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+
+.hover-white:hover {
+    color: #fff;
+}
+
+.hover-white:focus {
+    color: #fff;
+}
+
+.hover-bg-black:hover {
+    background-color: #000;
+}
+
+
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover, .dim:focus {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-out;
+}
+
+.grow:hover, .grow:focus {
+    transform: scale(1.05);
+}
+
+.grow:active {
+    transform: scale(.9);
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+
+.login{
+    grid-row: 2 ;
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+&__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 30rem;
+    padding: 4rem;
+    margin: 5rem;
+    background-image: radial-gradient(center, rgba($color-red-light, .5), 
+    rgba($color-red-dark, 1));;
+
+    border-radius: 3rem;
+    
+   
+}}
+
+
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 1px transparent;
+    padding: 1rem 5rem;
+    margin-bottom: 2rem;
+
+    
+    &__title{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        color: #fff;
+    }}
+                        
+    .components{
+        display: block;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+
+                        }
+    
+
+.label{
+    display: block;
+}
+
+.btn{
+    background-color: transparent;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.box{
+    height: 2.5rem;
+}
+
