@@ -1,15 +1,15 @@
 {
-  "main.css": "/Muaykhao86/odyssey.git/static/css/main.637bfc1b.chunk.css",
-  "main.js": "/Muaykhao86/odyssey.git/static/js/main.f090bc33.chunk.js",
-  "main.js.map": "/Muaykhao86/odyssey.git/static/js/main.f090bc33.chunk.js.map",
-  "runtime~main.js": "/Muaykhao86/odyssey.git/static/js/runtime~main.68685a9a.js",
-  "runtime~main.js.map": "/Muaykhao86/odyssey.git/static/js/runtime~main.68685a9a.js.map",
-  "static/js/2.c942bc99.chunk.js": "/Muaykhao86/odyssey.git/static/js/2.c942bc99.chunk.js",
-  "static/js/2.c942bc99.chunk.js.map": "/Muaykhao86/odyssey.git/static/js/2.c942bc99.chunk.js.map",
-  "index.html": "/Muaykhao86/odyssey.git/index.html",
-  "precache-manifest.0b3e0683329448a1dfc4f4958aebe0fa.js": "/Muaykhao86/odyssey.git/precache-manifest.0b3e0683329448a1dfc4f4958aebe0fa.js",
-  "service-worker.js": "/Muaykhao86/odyssey.git/service-worker.js",
-  "static/css/main.637bfc1b.chunk.css.map": "/Muaykhao86/odyssey.git/static/css/main.637bfc1b.chunk.css.map",
-  "static/media/main.scss": "/Muaykhao86/odyssey.git/static/media/LogoIsh.69bd55f6.jpg",
-  "static/media/img.jpg": "/Muaykhao86/odyssey.git/static/media/img.4d378368.jpg"
+  "main.css": "/odyssey/static/css/main.6ec28b56.chunk.css",
+  "main.js": "/odyssey/static/js/main.9f9fc809.chunk.js",
+  "main.js.map": "/odyssey/static/js/main.9f9fc809.chunk.js.map",
+  "runtime~main.js": "/odyssey/static/js/runtime~main.1f06aec1.js",
+  "runtime~main.js.map": "/odyssey/static/js/runtime~main.1f06aec1.js.map",
+  "static/js/2.c942bc99.chunk.js": "/odyssey/static/js/2.c942bc99.chunk.js",
+  "static/js/2.c942bc99.chunk.js.map": "/odyssey/static/js/2.c942bc99.chunk.js.map",
+  "index.html": "/odyssey/index.html",
+  "precache-manifest.41b8e34a78a6764d37b067d1450eecba.js": "/odyssey/precache-manifest.41b8e34a78a6764d37b067d1450eecba.js",
+  "service-worker.js": "/odyssey/service-worker.js",
+  "static/css/main.6ec28b56.chunk.css.map": "/odyssey/static/css/main.6ec28b56.chunk.css.map",
+  "static/media/main.scss": "/odyssey/static/media/LogoIsh.69bd55f6.jpg",
+  "static/media/img.jpg": "/odyssey/static/media/img.4d378368.jpg"
 }

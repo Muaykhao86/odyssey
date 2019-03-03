@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Muaykhao86/odyssey.git/precache-manifest.0b3e0683329448a1dfc4f4958aebe0fa.js"
+  "/odyssey/precache-manifest.41b8e34a78a6764d37b067d1450eecba.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Muaykhao86/odyssey.git/index.html", {
+workbox.routing.registerNavigationRoute("/odyssey/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
