@@ -22,7 +22,7 @@ import {requestSignIn} from './redux/actions';
 const initialState = {
   id: 1,
   videos: [...Spider],
-  selectedVideo: `http://www.youtube.com/embed/HR7_InD8i3o?&origin=https://youtu.be/HR7_InD8i3o`,
+  selectedVideo: `https://www.youtube.com/embed/HR7_InD8i3o?&origin=https://youtu.be/HR7_InD8i3o`,
   }
 
    
@@ -54,7 +54,7 @@ const mapDispatchToProps = (dispatch) => {
   }
   selectVideo = (e) =>{
     let id = e.target.parentElement.children[4].innerHTML;
-    let defaultUrl = `http://www.youtube.com/embed/${this.state.videos[id -1].videoUrl}?&origin=https://youtu.be/${this.state.videos[id -1].videoUrl}`;
+    let defaultUrl = `https://www.youtube.com/embed/${this.state.videos[id -1].videoUrl}?&origin=https://youtu.be/${this.state.videos[id -1].videoUrl}`;
     return (this.setState({selectedVideo:defaultUrl}));
   }
    
