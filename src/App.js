@@ -53,7 +53,11 @@ const initialState = {
       });
   }
   selectVideo = (e) =>{
+<<<<<<< HEAD
     let id = e.target.children[0].innerHTML;
+=======
+    let id = e.target.parentElement.children[1].innerHTML;
+>>>>>>> 320174bc4113f1d2fa471f1f271e6ac5d5bec358
     let defaultUrl = `https://www.youtube.com/embed/${this.props.videos[id -1].videoUrl}?&origin=https://youtu.be/${this.props.videos[id -1].videoUrl}`;
     return (this.setState({selectedVideo:defaultUrl}));
   }
