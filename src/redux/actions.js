@@ -29,6 +29,7 @@ export const requestSignIn = () => (dispatch) => {
    }
 
    export const onPageChange = () => 
+   console.log(window.location.href)
     // window.location.href === "http://localhost:3000/QuickTech"
     window.location.href === "https://muaykhao86.github.io/odyssey/QuickTech"
     ?
