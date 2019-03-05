@@ -3,8 +3,9 @@ import {
   Link
  } from 'react-router-dom';
 
+
 const Signin = ({requestSignIn}) => {
-  
+
     return (
     <main className="login">
         <form className="login__form">
@@ -20,13 +21,13 @@ const Signin = ({requestSignIn}) => {
                     </div>
 
                 </fieldset>
-            <div className="components">
+            {/* <div className="components">
                 <input className="input-reset grow pointer btn" onClick={requestSignIn} type="submit" value="Sign in"/>
-            </div>
+            </div> */}
             <div className="components">
                 {/* <Link onClick={signout} className=" link dim" to="/">Signout</Link> */}
 
-                <Link onClick={requestSignIn} className="link dim " to="/">Sign In</Link>
+                <Link onClick={requestSignIn} className="link dim " to="/LandingPage">Sign In</Link>
             </div>
         </form>
     </main>

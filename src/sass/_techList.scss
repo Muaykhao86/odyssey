@@ -1,14 +1,9 @@
-.techGrid{
+.techList{
     justify-self: center;
-
-
-    
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, minmax(150px, min-content));
     width: 90%;
     gap: 2rem;
-    padding: 3rem;
+    // padding: 3rem;
 
 }

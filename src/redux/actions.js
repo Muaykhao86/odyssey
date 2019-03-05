@@ -1,13 +1,12 @@
 import {
     REQUEST_SIGNIN_PENDING,
     REQUEST_SIGNIN_SUCCESS,
-    REQUEST_SIGNIN_FAILED} from './constants.js';
+    REQUEST_SIGNIN_FAILED,
+    QUICK_TECHNIQUE_PAGE,
+    TECHNIQUE_PAGE} from './constants.js';
  
     
-// export const requestSignIn = () => ({
-//     type: REQUEST_SIGNIN_SUCCESS, 
-//     payload: true
-// })
+
 const fakeAuth = {
     isAuthenticated: false,
     authenticate(cb) {
@@ -29,5 +28,11 @@ export const requestSignIn = () => (dispatch) => {
     dispatch({type: REQUEST_SIGNIN_FAILED, payload: false})
    }
 
+   export const onPageChange = () => 
+    window.location.href === "http://localhost:3000/QuickTech"
+    // window.location.href === "https://muaykhao86.github.io/odyssey/QuickTech"
+    ?
+    ({type: QUICK_TECHNIQUE_PAGE}) : ({type: TECHNIQUE_PAGE})
+   
 
 

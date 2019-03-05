@@ -5,14 +5,12 @@ import {
 
 
 
-const LandingCard = () => {
+const LandingCard = ({title, link}) => {
   
     return (
       <div className="landing__card ">
-        <h1>Card Section</h1>
-        <h2> Tecnique of the Week</h2>
-        <h2>Library</h2>
-        <Link to="/LandingPage">X</Link>
+      <h1>{title}</h1>
+      <Link className="landing__link"to={link}><span role="img" aria-label="Rocket ">🚀</span></Link>  
       </div>
     );
   }

@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3rem;
 
 &__title{
     font-size: 4rem;
@@ -15,7 +16,8 @@
 }
 
 &__list{
-    padding: 3rem;
+    padding: 5rem 3rem;
+    
 }
 
 &__item{

@@ -7,19 +7,19 @@ import {
 } from 'react-router-dom';
 
 import { Provider} from 'react-redux';
-// combineReducers compose
-import { createStore, applyMiddleware, } from 'redux';
-import {signIn} from './redux/reducers';
+
+import { createStore, applyMiddleware, combineReducers, compose} from 'redux';
+import {signIn, changePage} from './redux/reducers';
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 
 
 const logger = createLogger();// redux-logger
-const rootReducer = signIn;
-// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const rootReducer = combineReducers({signIn, changePage});
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
-const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMiddleware, logger)));
 
 ReactDOM.render(
 

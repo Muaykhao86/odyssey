@@ -1,36 +1,36 @@
 .card{
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-image: radial-gradient(center, rgba($color-red-light, .5), 
     rgba($color-red-dark, 1));;
-    padding: 3rem;
+
+    padding: 1rem;
     border: solid 2px $color-red-dark;
     border-radius: 3rem;
-    
-
-
-    &__img{
-        width:100%;
-        margin: 1rem;
-    }
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: .2rem;
+    text-shadow: .3rem .2rem $color-red-dark;
 
     &__title{
-        color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 1rem;
-        text-shadow: .3rem .2rem $color-red-dark;
+        margin: .2rem;
 
     }
 
+    &__id{
+     visibility: hidden;
+     font-size: .2rem
+    }
+ 
+
     &__btn{
+        margin-right: 2rem;
         background:    $color-red-dark;
         border-radius: 5px;
-        padding:       1rem 2rem;
+        padding:       .8rem;
         color:         #ffffff;
-        display:       inline-block;
-        text-align:    center;
         text-shadow:   1px 1px #000000;
+        cursor: pointer;
     }
 
 }

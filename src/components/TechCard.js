@@ -3,17 +3,12 @@ import React from 'react';
 
 
 
-const TechCard = ({id, title, selectVideo}) => {
+const TechCard = ({id, title, selectVideo, position}) => {
   
     return (
       <div className="card">
-        <img className="card__img" src={require('../img/img.jpg')} alt="Img"/>
         <h1 className="card__title">{title}</h1>
-        <h2 className="card__title">Position</h2>
-        <h2 className="card__title">Attack/defence</h2>
-        <h2 className="card__title">{id}</h2>
-        <button className="card__btn" onClick={selectVideo}>Select</button>
-        
+        <button className="card__btn" onClick={selectVideo}><h1 className="card__id">{id}</h1></button>
       </div>
     );
   }
