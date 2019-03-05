@@ -29,13 +29,8 @@ export const requestSignIn = () => (dispatch) => {
    }
 
    export const onPageChange = () => 
-<<<<<<< HEAD
-    window.location.href === "http://localhost:3000/QuickTech"
-    // window.location.href === "https://muaykhao86.github.io/odyssey/QuickTech"
-=======
     // window.location.href === "http://localhost:3000/QuickTech"
     window.location.href === "https://muaykhao86.github.io/odyssey/QuickTech"
->>>>>>> 320174bc4113f1d2fa471f1f271e6ac5d5bec358
     ?
     ({type: QUICK_TECHNIQUE_PAGE}) : ({type: TECHNIQUE_PAGE})
    
