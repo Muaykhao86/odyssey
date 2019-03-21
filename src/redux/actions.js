@@ -35,6 +35,10 @@ export const requestSignIn = () => (dispatch) => {
       return ({type: QUICK_TECHNIQUE_PAGE});
     case "http://localhost:3000/TechniquePage" :
       return ({type: TECHNIQUE_PAGE});
+    case "https://muaykhao86.github.io/odyssey/QuickTech" :
+      return ({type: QUICK_TECHNIQUE_PAGE});
+    case "https://muaykhao86.github.io/odyssey/TechniquePage" :
+      return ({type: TECHNIQUE_PAGE});
     default:
       return ({type: TECHNIQUE_PAGE});
    }

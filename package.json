@@ -39,5 +39,12 @@
     "clean_urls": false,
     "routes": {
       "/**": "index.html"
+    },
+    "devServer": {
+      "historyApiFallback": true,
+      "contentBase": "./",
+      "hot": true
     }
+
+   
 }

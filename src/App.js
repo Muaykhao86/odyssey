@@ -48,7 +48,7 @@ const initialState = {
   constructor(props){
     super(props)
       this.state = initialState;
-      this.props.history.listen((location, action) => {
+      this.props.history.listen((location, action) => {//so i can listen to the route change for the video that loads
         this.props.onPageChange();
       });
   }
