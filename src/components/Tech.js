@@ -62,13 +62,13 @@
         id:2,
         title: 'Spider Guard - Triangle',
         position: 'Guard',
-        videoUrl: 'y_MMfjlqrTc',
+        videoUrl: 'ynb4WRjSS70',
       },
       {
         id:3,
         title: 'Spider Guard - Rolling Wing Choke',
         position: 'Guard',
-        videoUrl: 'ynb4WRjSS70',
+        videoUrl: 'y_MMfjlqrTc',
       },
       {
         id:4,

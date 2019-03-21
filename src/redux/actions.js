@@ -4,18 +4,19 @@ import {
     REQUEST_SIGNIN_FAILED,
     QUICK_TECHNIQUE_PAGE,
     TECHNIQUE_PAGE} from './constants.js';
+
  
     
 
 const fakeAuth = {
+  
     isAuthenticated: false,
-    authenticate(cb) {
+    authenticate() {
       this.isAuthenticated = true
-      setTimeout(cb, 100) // fake async
     },
     signout(cb) {
       this.isAuthenticated = false
-      setTimeout(cb, 100) // fake async
+
 }
 }
 
@@ -28,12 +29,16 @@ export const requestSignIn = () => (dispatch) => {
     dispatch({type: REQUEST_SIGNIN_FAILED, payload: false})
    }
 
-   export const onPageChange = () => 
-   
-    // window.location.href === "http://localhost:3000/QuickTech"
-    window.location.href === "https://muaykhao86.github.io/odyssey/QuickTech"
-    ?
-    ({type: QUICK_TECHNIQUE_PAGE}) : ({type: TECHNIQUE_PAGE})
-   
+   export const onPageChange = () => { 
+   switch(window.location.href){
+    case "http://localhost:3000/QuickTech" :
+      return ({type: QUICK_TECHNIQUE_PAGE});
+    case "http://localhost:3000/TechniquePage" :
+      return ({type: TECHNIQUE_PAGE});
+    default:
+      return ({type: TECHNIQUE_PAGE});
+   }
+  }
 
+  // https://muaykhao86.github.io/odyssey/TechniquePage
 

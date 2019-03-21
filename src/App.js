@@ -60,6 +60,7 @@ const initialState = {
    
   render(){
 
+
     const PrivateRoute = ({ component: Component, ...rest}) => (
       <Route {...rest} render={(props) => (
        this.props.signedIn === true ? 

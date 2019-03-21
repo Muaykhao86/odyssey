@@ -100,6 +100,10 @@
     max-width: 30rem;
     padding: 4rem;
     margin: 5rem;
+
+    @media only screen and (max-width: $bp-large){
+        margin: .5rem;
+    }
     background-image: radial-gradient(center, rgba($color-red-light, .5), 
     rgba($color-red-dark, 1));;
 

@@ -11,7 +11,7 @@ import {Random, Spider} from '../components/Tech';
 
 const initialStateSignedIn = {
     isPending: false,
-    signedIn:false
+    signedIn:false,
 }
 
 export const signIn = (state=initialStateSignedIn, action={})=>{
