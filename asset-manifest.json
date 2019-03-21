@@ -1,14 +1,14 @@
 {
-  "main.css": "/odyssey/static/css/main.054c78d9.chunk.css",
-  "main.js": "/odyssey/static/js/main.330ef596.chunk.js",
-  "main.js.map": "/odyssey/static/js/main.330ef596.chunk.js.map",
+  "main.css": "/odyssey/static/css/main.af4c55b2.chunk.css",
+  "main.js": "/odyssey/static/js/main.e3c5c854.chunk.js",
+  "main.js.map": "/odyssey/static/js/main.e3c5c854.chunk.js.map",
   "runtime~main.js": "/odyssey/static/js/runtime~main.1f06aec1.js",
   "runtime~main.js.map": "/odyssey/static/js/runtime~main.1f06aec1.js.map",
-  "static/js/2.61c90b03.chunk.js": "/odyssey/static/js/2.61c90b03.chunk.js",
-  "static/js/2.61c90b03.chunk.js.map": "/odyssey/static/js/2.61c90b03.chunk.js.map",
+  "static/js/2.b48c3da9.chunk.js": "/odyssey/static/js/2.b48c3da9.chunk.js",
+  "static/js/2.b48c3da9.chunk.js.map": "/odyssey/static/js/2.b48c3da9.chunk.js.map",
   "index.html": "/odyssey/index.html",
-  "precache-manifest.29010b2485f89e00725f7993c8470616.js": "/odyssey/precache-manifest.29010b2485f89e00725f7993c8470616.js",
+  "precache-manifest.c19b7832ec47146eb91009f33eed4db1.js": "/odyssey/precache-manifest.c19b7832ec47146eb91009f33eed4db1.js",
   "service-worker.js": "/odyssey/service-worker.js",
-  "static/css/main.054c78d9.chunk.css.map": "/odyssey/static/css/main.054c78d9.chunk.css.map",
+  "static/css/main.af4c55b2.chunk.css.map": "/odyssey/static/css/main.af4c55b2.chunk.css.map",
   "static/media/main.scss": "/odyssey/static/media/LogoIsh.69bd55f6.jpg"
 }
