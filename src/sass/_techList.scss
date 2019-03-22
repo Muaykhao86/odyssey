@@ -1,5 +1,6 @@
 .techList{
-    justify-self: center;
+    justify-content: center;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 90%;

@@ -20,7 +20,7 @@ class Signin extends React.Component{
         super(props)
         this.state = {
             signInEmail: " ",
-            signInPassword: " "
+            signInPassword: ""
         }
     }
 
@@ -31,7 +31,10 @@ class Signin extends React.Component{
         this.setState({signInPassword: event.target.value})
     }
     render(){
-        const {requestSignIn} = this.props 
+        const {requestSignIn} = this.props ;
+        // if(this.state.signInEmail && this.state.signInPassword){
+        //  const {requestSignIn(true)}= this.props;    
+        // }else const {requestSignIn(false)} = this.props;
         
     return (
     <main className="login">

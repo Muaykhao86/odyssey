@@ -1,9 +1,10 @@
 .card{
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-image: radial-gradient(center, rgba($color-red-light, .5), 
     rgba($color-red-dark, 1));;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
 
     padding: 1rem;
     border: solid 2px $color-red-dark;
@@ -13,24 +14,18 @@
     text-shadow: .3rem .2rem $color-red-dark;
 
     &__title{
+        text-align: center;
         margin: .2rem;
-
     }
 
-    &__id{
-     visibility: hidden;
-     font-size: .2rem
-    }
- 
+    // &__id{
+    //  visibility: hidden;
+    //  font-size: .2rem
+    // }
 
-    &__btn{
-        margin-right: 2rem;
-        background:    $color-red-dark;
-        border-radius: 5px;
-        padding:       .8rem;
-        color:         #ffffff;
-        text-shadow:   1px 1px #000000;
-        cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0.1rem 0.1rem 1rem rgba(255, 255, 255, 0.7);
     }
 
 }

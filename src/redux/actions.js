@@ -11,8 +11,9 @@ import {
 const fakeAuth = {
   
     isAuthenticated: false,
-    authenticate() {
-      this.isAuthenticated = true
+    authenticate(pass) {
+      console.log(pass)
+     this.isAuthenticated = true 
     },
     signout(cb) {
       this.isAuthenticated = false
@@ -21,9 +22,9 @@ const fakeAuth = {
 }
 
 // HIGHER ORDER FUNCTION => RETURNS ANOTHER FUNCTION that takes dispatch and runs the second half of the function
-export const requestSignIn = () => (dispatch) => {
-    dispatch({type: REQUEST_SIGNIN_PENDING})
-    fakeAuth.authenticate()
+export const requestSignIn = (pass) => (dispatch) => {
+    dispatch({type: REQUEST_SIGNIN_PENDING}) 
+    fakeAuth.authenticate(pass)
     fakeAuth.isAuthenticated === true ? 
     dispatch({type: REQUEST_SIGNIN_SUCCESS, payload: true}) : 
     dispatch({type: REQUEST_SIGNIN_FAILED, payload: false})

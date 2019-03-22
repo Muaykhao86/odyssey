@@ -30,7 +30,7 @@ const mapStateToProps = state => {
 // What props it should listen to that are actions, then dispatch it to the reducers as a prop function
 const mapDispatchToProps = (dispatch) => {
   return{
-   requestSignIn:  () => dispatch(requestSignIn()),
+   requestSignIn:  () => requestSignIn(true)(dispatch),
    onPageChange:  () => dispatch(onPageChange())
   }
 }
@@ -53,14 +53,14 @@ const initialState = {
       });
   }
   selectVideo = (e) =>{
-    let id = e.target.children[0].innerHTML;
+    let id = e.target.id
     let defaultUrl = `https://www.youtube.com/embed/${this.props.videos[id -1].videoUrl}?&origin=https://youtu.be/${this.props.videos[id -1].videoUrl}`;
     return (this.setState({selectedVideo:defaultUrl}));
   }
    
   render(){
 
-
+    console.log(this.props.signInEmail)
     const PrivateRoute = ({ component: Component, ...rest}) => (
       <Route {...rest} render={(props) => (
        this.props.signedIn === true ? 
