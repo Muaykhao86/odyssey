@@ -12,8 +12,7 @@ const Header = ({signedIn}) => {
         
         <ul className="header__container">
           <li className="header__item"><Link to="/LandingPage" className="header__link">DashBoard</Link></li>
-          <li className="header__item"><Link to="/Library" className="header__link">Sections</Link></li>
-          <li className="header__item"><Link to="/TechniquePage" className="header__link">Technique Lesson</Link></li>
+          <li className="header__item"><Link to="/Library" className="header__link">Library</Link></li>
           <li className="header__item"><Link to="/QuickTech" className="header__link">QuickTechnique</Link></li>
         </ul>
 
