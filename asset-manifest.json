@@ -1,15 +1,15 @@
 {
-  "main.css": "/odyssey/static/css/main.cabb8a06.chunk.css",
-  "main.js": "/odyssey/static/js/main.6d8589de.chunk.js",
-  "main.js.map": "/odyssey/static/js/main.6d8589de.chunk.js.map",
+  "main.css": "/odyssey/static/css/main.91a7e7e9.chunk.css",
+  "main.js": "/odyssey/static/js/main.03192750.chunk.js",
+  "main.js.map": "/odyssey/static/js/main.03192750.chunk.js.map",
   "runtime~main.js": "/odyssey/static/js/runtime~main.1f06aec1.js",
   "runtime~main.js.map": "/odyssey/static/js/runtime~main.1f06aec1.js.map",
-  "static/js/2.1496a9b7.chunk.js": "/odyssey/static/js/2.1496a9b7.chunk.js",
-  "static/js/2.1496a9b7.chunk.js.map": "/odyssey/static/js/2.1496a9b7.chunk.js.map",
+  "static/js/2.5ae5b780.chunk.js": "/odyssey/static/js/2.5ae5b780.chunk.js",
+  "static/js/2.5ae5b780.chunk.js.map": "/odyssey/static/js/2.5ae5b780.chunk.js.map",
   "index.html": "/odyssey/index.html",
-  "precache-manifest.8a36288cc3d7020228dea27ed3a04388.js": "/odyssey/precache-manifest.8a36288cc3d7020228dea27ed3a04388.js",
+  "precache-manifest.0a46f96ca6da6220f8f6d44cd2793f12.js": "/odyssey/precache-manifest.0a46f96ca6da6220f8f6d44cd2793f12.js",
   "service-worker.js": "/odyssey/service-worker.js",
-  "static/css/main.cabb8a06.chunk.css.map": "/odyssey/static/css/main.cabb8a06.chunk.css.map",
+  "static/css/main.91a7e7e9.chunk.css.map": "/odyssey/static/css/main.91a7e7e9.chunk.css.map",
   "static/media/main.scss": "/odyssey/static/media/LogoIsh.69bd55f6.jpg",
   "static/media/logo.png": "/odyssey/static/media/logo.919526e6.png"
 }
