@@ -1,7 +1,13 @@
 .videoPlayer{
-    margin: 5rem;
-    background-color: $color-grey-dark-2;
+    display: flex;
+    justify-content: center;
+    margin: 0 5rem;
+    // background-color: $color-grey-dark-2;
     border: $color-grey-dark-2 .8rem solid;
+    border-radius: .8rem;
 
+    @media only screen and (max-width: $bp-medium){
+        justify-content: stretch;
+    }
 
 }

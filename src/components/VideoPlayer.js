@@ -38,7 +38,7 @@ const VideoPlayer = ({selectedVideo}) => {
                 <iframe 
                 title="Technique-Video"
                 width="520" 
-                height="305" 
+                height="300" 
                 src={selectedVideo}
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -47,13 +47,13 @@ const VideoPlayer = ({selectedVideo}) => {
             </div>
         )
     }
-    else if(window.innerWidth >= breakpoints.mobile){
+    else if(window.innerWidth < breakpoints.tablet){
         return (
             <div className="videoPlayer">
                 <iframe 
                 title="Technique-Video"
                 width="320" 
-                height="250" 
+                height="180" 
                 src={selectedVideo}
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -62,23 +62,6 @@ const VideoPlayer = ({selectedVideo}) => {
             </div>
         )
     }
-else if(window.innerWidth < breakpoints.mobile){
-        return (
-            <div className="videoPlayer">
-                <iframe 
-                title="Technique-Video"
-                width="200" 
-                height="100" 
-                src={selectedVideo}
-                frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen>
-                </iframe>
-            </div>
-        )
-    }
-
-
 }
 
 

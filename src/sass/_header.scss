@@ -7,30 +7,67 @@
     padding: 2rem;
     border-bottom: $color-grey-dark-2 2px solid;
     margin-bottom: 4rem;
+
     background-image:linear-gradient(to top, rgba($color-red-light, .5), 
      rgba($color-red-dark, 1));
+   
+     @media only screen and (max-width: $bp-large){
+        flex-direction: row;
+        justify-content: space-between;
+        }
+     @media only screen and (max-width: $bp-small){
+        // position: fixed;
+        // width: 100vw;
+        // height: 20vh;
+        flex-direction: column;
+        justify-content: space-between;
+        }
 
-    &__title{
-    font-size: 5rem;
-    font-weight: 400;
-    font-family: $font-primary;
-    color: #fff;
+       
 
-    }
-
-    &__container{
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        list-style: none;
-
-    }
-
-    &__item{
-                
-        padding: 1rem 2rem;
-        transition: all .7s;
         
+        &__title{
+            font-size: 5rem;
+            font-weight: 400;
+            font-family: $font-primary;
+            color: #fff;
+            
+            @media only screen and (max-width: $bp-large){
+                font-size: 3rem;
+            }
+            
+            
+            
+            
+        }
+        
+        &__container{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            list-style: none;
+            
+            
+        }
+        
+        &__item{
+            // display: none;
+            padding: 1rem 2rem;
+            &:not(:last-child){
+                margin-right: 4rem;
+            
+                @media only screen and (max-width: $bp-small){
+                    margin-right: .5rem;
+                }
+            }
+            // transition: all .7s ease-in;
+            
+            
+            
+            
+            
+            
+            
         &:hover{
             background-color: var(--color-primary);
             }
@@ -46,7 +83,7 @@
         transition: all .5s;
                         
         &:hover{
-            color: $color-grey-dark-2;
+        color: $color-grey-dark-2;
         text-shadow: .5px .5px #fff;
 
                             }

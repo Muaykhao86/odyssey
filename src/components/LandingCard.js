@@ -7,13 +7,16 @@ import logo from'../img/logo.png';
 
 
 const LandingCard = ({title, link}) => {
-{/* <span role="img" aria-label="Rocket ">🚀</span> */}
+
   
     return (
+
+      <Link className="landing__link"to={link}>
       <div className="landing__card ">
       <h1>{title}</h1>
-      <Link className="landing__link"to={link}><img className="landing__logo" src={logo} alt="logo"/></Link>  
+      <img className="landing__logo" src={logo} alt="logo"/>  
       </div>
+      </Link>
     );
   }
 

@@ -9,7 +9,7 @@ const LandingPage = () => {
     return (
       <div className="landing">
         <LandingCard title = 'This Weeks Techniques' link="/TechniquePage" />
-        <LandingCard title = 'In depth positional notes' link="/TechniquePage"/>
+        <LandingCard title = 'Positional notes' link="/TechniquePage"/>
         <LandingCard title = 'Library' link="/Library" />
       </div>
     );
