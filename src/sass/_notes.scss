@@ -1,0 +1,28 @@
+.notes{
+    grid-area: tech;
+    background-color:  rgba($color-grey-dark-2, 0.5); 
+    border-radius: 10rem;
+    margin: 0 20rem;
+    display: flex;
+
+
+    &__container{
+    
+    flex: 1;
+    padding: 5rem 5rem;
+    
+    color: #eee;
+
+    }
+
+    &__header{
+
+    margin: 2rem;
+    }
+
+    &__paragraph{
+
+    margin: 2rem;
+    
+    }
+}

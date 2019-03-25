@@ -5,6 +5,7 @@ import {Spider} from './components/Tech';
 import LandingPage from './containers/LandingPage';
 import Signin from './components/SignIn/Signin';
 import Library from './containers/Library';
+import Notes from './components/Notes';
 import ErrorBoundary from './components/ErrorBoundary';
 import './sass/main.scss';
 import {
@@ -75,6 +76,7 @@ const initialState = {
           <Header signedIn ={this.props.signedIn}/>
       <Switch>
                 <Route exact path ="/" component={(props) => <Signin {...props}  requestSignIn={this.props.requestSignIn}/>}/>
+                <PrivateRoute path ="/Notes" component={Notes} />
                 <PrivateRoute path ="/Library" component={Library} />
                 <PrivateRoute path ="/LandingPage" component={LandingPage} />
                 <PrivateRoute path ="/TechniquePage" component={(props) => <TechniquePage {...props} videos = {this.props.videos} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
