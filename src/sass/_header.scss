@@ -1,9 +1,9 @@
 .header{
+    grid-area: head;
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-area: head;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2rem;
     border-bottom: $color-grey-dark-2 2px solid;
     margin-bottom: 4rem;
