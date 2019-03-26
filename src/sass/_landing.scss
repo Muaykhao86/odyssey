@@ -10,7 +10,7 @@
     // border: solid 2px $color-red-dark;
     border-radius: 3rem;
     
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: $bp-medium){
         flex-flow: wrap;
         align-items: center;
         font-size: 50%;
