@@ -11,9 +11,9 @@
     border-radius: 3rem;
     
     @media only screen and (max-width: $bp-small){
-        
         flex-flow: wrap;
         align-items: center;
+        font-size: 50%;
  
         // overflow: scroll;
         // border: none;
