@@ -5,6 +5,10 @@
     margin: 0 20rem;
     display: flex;
 
+    @media only screen and (max-width: $bp-medium){
+        margin: 0 2rem;
+    }
+
 
     &__container{
     
