@@ -11,6 +11,10 @@
         flex-direction: column;
         margin: 4rem;
     }
+    
+    @media only screen and (max-width: $bp-medium){
+        margin: 0;
+    }
 
 }
 
@@ -25,8 +29,4 @@
         height: 40rem;
     }
 
-    @media only screen and (max-width: $bp-medium){
-        margin: 3rem 0;
-    }
-   
 }

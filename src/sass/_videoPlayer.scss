@@ -9,5 +9,9 @@
     @media only screen and (max-width: $bp-medium){
         justify-content: stretch;
     }
+    
+    @media only screen and (max-width: $bp-medium){
+        margin: 1rem 0;
+    }
 
 }

@@ -6,7 +6,7 @@ const VideoPlayer = ({selectedVideo}) => {
     const breakpoints = {
         desktop: 1100,
         tablet: 840,
-        mobile: 540
+        mobile: 570
       };
       
     //   if (window.innerWidth >= breakpoints.desktop) {
@@ -32,7 +32,7 @@ const VideoPlayer = ({selectedVideo}) => {
         </div>
         )
     }
-    else if(window.innerWidth >= breakpoints.tablet){
+    else if(window.innerWidth >= breakpoints.mobile){
         return (
             <div className="videoPlayer">
                 <iframe 
@@ -47,7 +47,7 @@ const VideoPlayer = ({selectedVideo}) => {
             </div>
         )
     }
-    else if(window.innerWidth < breakpoints.tablet){
+    else if(window.innerWidth < breakpoints.mobile){
         return (
             <div className="videoPlayer">
                 <iframe 
@@ -60,8 +60,7 @@ const VideoPlayer = ({selectedVideo}) => {
                 allowFullScreen>
                 </iframe>
             </div>
-        )
-    }
+        )}
 }
 
 

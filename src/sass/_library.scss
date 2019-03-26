@@ -1,12 +1,19 @@
 .library{
-    grid-column: 2 / 4;
+    grid-area: tech;
     background-image: radial-gradient(center, rgba($color-red-light, .5), 
         rgba($color-red-dark, 1));;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 3rem;
+    margin: 0 30rem;
+
+
+    @media only screen and (max-width: $bp-medium){
+        margin: 0 2rem;
+    }
 
 &__title{
     font-size: 4rem;
@@ -27,8 +34,19 @@
     
 }
 
-&__link{
+&__link,
+&__link:link,
+&__link:active{
+
     text-decoration: none;
     color: #fff;
+    transition: all .5s;
+                    
+    &:hover{
+    color: $color-grey-dark-2;
+    text-shadow: .5px .5px #fff;
+
+                        }
 }
+
 }
