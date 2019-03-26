@@ -26,6 +26,11 @@
     &:hover{
         transform: scale(1.1);
         box-shadow: 0 .4rem 1.8rem rgba(255, 255, 255, 0.7);
+
+        @media only screen and (max-width: $bp-medium){
+            box-shadow: none;
+            transform: scale(1);  
+        }
     }
 
 }

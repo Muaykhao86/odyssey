@@ -50,7 +50,12 @@
 
         &:hover {
         box-shadow: 0 1.1rem 10rem rgba(255, 255, 255, 0.7);
-        transform: scale(1.08)
+        transform: scale(1.08);
+
+        @media only screen and (max-width: $bp-medium){
+            box-shadow: none;
+            transform: scale(1);  
+        }
         }
 
     }
