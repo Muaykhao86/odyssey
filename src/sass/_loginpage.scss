@@ -90,8 +90,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 &__form{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,6 +105,9 @@
 
     @media only screen and (max-width: $bp-large){
         margin: .5rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        max-width: 40rem;
     }
     background-image: radial-gradient(center, rgba($color-red-light, .5), 
     rgba($color-red-dark, 1));;
@@ -137,6 +142,7 @@
         font-size: 1.6rem;
         font-weight: 200;
         margin-bottom: 1rem;
+    
 
                         }
     
@@ -155,5 +161,6 @@
 
 .box{
     height: 2.5rem;
+
 }
 

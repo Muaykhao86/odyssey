@@ -18,6 +18,8 @@
     overflow: scroll;
     border: none;
     height: 50rem;
+    justify-content: center;
+    align-items: center;
 
     @media only screen and (max-width: $bp-large){
         height: 40rem;
