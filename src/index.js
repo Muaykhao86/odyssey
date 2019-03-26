@@ -24,7 +24,7 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMid
 ReactDOM.render(
 
     <Provider store={store}>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename='https://muaykhao86.github.io/odyssey/'>
     <App/>
     </Router>
     </Provider> ,document.getElementById('root')
