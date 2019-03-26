@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/odyssey/static/js/runtime~main.1f06aec1.js"
   },
   {
-    "revision": "a771bf92683ca8ef41bf",
-    "url": "/odyssey/static/js/main.a771bf92.chunk.js"
+    "revision": "bb156f2ad21f8be909ec",
+    "url": "/odyssey/static/js/main.bb156f2a.chunk.js"
   },
   {
     "revision": "5ae5b780b9eae3b56307",
     "url": "/odyssey/static/js/2.5ae5b780.chunk.js"
   },
   {
-    "revision": "a771bf92683ca8ef41bf",
-    "url": "/odyssey/static/css/main.66863e0f.chunk.css"
+    "revision": "bb156f2ad21f8be909ec",
+    "url": "/odyssey/static/css/main.3e798d8e.chunk.css"
   },
   {
-    "revision": "0e8483d6bcd39ad1bb7f31dcdc786be6",
+    "revision": "61d6d1cb69fefad0256e4fe2f953f34d",
     "url": "/odyssey/index.html"
   }
 ];
