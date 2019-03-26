@@ -20,11 +20,12 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMiddleware, logger)));
+const supportsHistory = 'pushState' in window.history
 
 ReactDOM.render(
 
     <Provider store={store}>
-    <Router basename='https://muaykhao86.github.io/odyssey/'>
+    <Router basename={process.env.PUBLIC_URL} forceRefresh={!supportsHistory}>
     <App/>
     </Router>
     </Provider> ,document.getElementById('root')
