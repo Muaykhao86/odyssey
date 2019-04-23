@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/odyssey/static/css/main.18f6c343.chunk.css"
   },
   {
-    "revision": "c5a612f79235155bdbaf4aa1a2f79b7d",
+    "revision": "4c185949172e876a04d1a672c3482a2e",
     "url": "/odyssey/index.html"
   }
 ];
