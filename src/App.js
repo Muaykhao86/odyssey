@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import TechniquePage from './containers/TechniquePage';
-import {Spider} from './components/Tech';
+import {tech} from './components/Tech';
 import LandingPage from './containers/LandingPage';
 import Signin from './components/SignIn/Signin';
 import Library from './containers/Library';
@@ -16,6 +16,8 @@ import {
 } from 'react-router-dom';
 import {connect} from 'react-redux';
 import {requestSignIn, onPageChange} from './redux/actions';
+// import TechCard from './TechCard'
+
 
   
 /////////connect(mapStateToProps, mapDispatchToProps)///////////////////////
@@ -26,24 +28,24 @@ const mapStateToProps = state => {
     isPending: state.signIn.isPending,
     signedIn: state.signIn.signedIn,
     videos: state.changePage.videos,
+    filtered: state.videoFilter.filtered
   }
 }
 // What props it should listen to that are actions, then dispatch it to the reducers as a prop function
 const mapDispatchToProps = (dispatch) => {
   return{
-   requestSignIn:  () => requestSignIn(true)(dispatch),
-   onPageChange:  () => dispatch(onPageChange())
+   requestSignIn:  (pass) => requestSignIn(pass)(dispatch),
+   onPageChange:  () => dispatch(onPageChange()),
+
   }
 }
 /////////////////////////////////////////////////////////////////////////////
 
 const initialState = {
   id: 1,
-  videos: [...Spider],
+  // videosApp: [], not needed?
   selectedVideo: `https://www.youtube.com/embed/HR7_InD8i3o?&origin=https://youtu.be/HR7_InD8i3o`,
   }
-
-
 
   class App extends Component {
   constructor(props){
@@ -53,15 +55,32 @@ const initialState = {
         this.props.onPageChange();
       });
   }
-  selectVideo = (e) =>{
-    let id = e.target.id
-    let defaultUrl = `https://www.youtube.com/embed/${this.props.videos[id -1].videoUrl}?&origin=https://youtu.be/${this.props.videos[id -1].videoUrl}`;
+
+  componentDidMount(){
+    this.setState(state => { 
+      return {videos: [...this.LibraryList("spider")]
+    }});
+  }
+
+  LibraryList = (search) => {//Maybe changhe the libary list into a action/reducer then have the array thats returned form the list/ could pass the function as props???
+    let array = [];
+    // let lowerSearch = search.toLowerCase();
+     tech.forEach(obj => {
+       let values = Object.values(obj);
+      return  values.includes(search) ?  array.push({title: obj['title'], url:obj['videoUrl'], id: obj['id']}) 
+       : null
+      })
+     return array;
+    }
+  
+  selectVideo = (e) => {
+    const id = e.target.id;
+    let defaultUrl = `https://www.youtube.com/embed/${this.props.videos[id].videoUrl}?&origin=https://youtu.be/${this.props.videos[id].videoUrl}`;
     return (this.setState({selectedVideo:defaultUrl}));
   }
-   
+  
   render(){
-
-    console.log(this.props.signInEmail)
+  
     const PrivateRoute = ({ component: Component, ...rest}) => (
       <Route {...rest} render={(props) => (
        this.props.signedIn === true ? 
@@ -69,7 +88,8 @@ const initialState = {
        : <Redirect to='/' />
       )} />
      )
-
+    let filter = this.props.filtered;
+    console.log("wtf",this.LibraryList("Gi"))//WHY IS LIBRARY LIST NOT RENDERING GI OR NO GI THROUGH TECHNIQUE PAGE!!!!!!!!//=> => => this is because of ghe to lowercase and its searching ONLY for the term Gi, not Gi and No-Gi
     return (
           <div className="container">
           <ErrorBoundary>
@@ -79,11 +99,12 @@ const initialState = {
                 <PrivateRoute path ="/Notes" component={Notes} />
                 <PrivateRoute path ="/Library" component={Library} />
                 <PrivateRoute path ="/LandingPage" component={LandingPage} />
-                <PrivateRoute path ="/TechniquePage" component={(props) => <TechniquePage {...props} videos = {this.props.videos} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
-                <PrivateRoute path ="/QuickTech" component={(props) => <TechniquePage {...props} videos = {this.props.videos} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
+                <PrivateRoute path ="/FilteredTech" component={(props) => <TechniquePage {...props} videos={this.LibraryList(filter)} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
+                <PrivateRoute path ="/TechniquePage" component={(props) => <TechniquePage {...props} videos={this.LibraryList('back')} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
+                <PrivateRoute path ="/QuickTech" component={(props) => <TechniquePage {...props} videos={this.props.videos} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
       </Switch>
           </ErrorBoundary>
-            </div>
+          </div>
 
     );
     }

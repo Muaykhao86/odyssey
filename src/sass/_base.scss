@@ -67,9 +67,23 @@ body{
     gap:1rem;
     grid-template-areas: 
     "head head head head"
-    "tech tech tech tech"
-    ".... .... .... .... ";
+    "tech tech tech tech";
 
+
+    // @media only screen and (max-width: $bp-largest){
+    //     grid-template-areas: 
+    // "head head head head"
+    // "tech tech tech tech"
+    // ".... .... .... .... ";
+    // }
+
+    // @media only screen and (max-width: $bp-small){
+    // grid-template-areas: 
+    //     "head head head head"
+    //     "tech tech tech tech"
+    //     ".... .... .... .... ";
+        
+    // }
    
    
 

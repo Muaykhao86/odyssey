@@ -1,8 +1,7 @@
 .card{
     display:flex;
     justify-content: center;
-    background-image: radial-gradient(center, rgba($color-red-light, .5), 
-    rgba($color-red-dark, 1));;
+    background-image: radial-gradient(rgba($color-red-light, .5), rgba($color-red-dark, 1));
     cursor: pointer;
     transition: all 0.2s ease-in;
 
@@ -10,7 +9,7 @@
     border: solid 2px $color-grey-dark-2;
     border-radius: 3rem;
     color: rgba(255, 255, 255, 0.7);
-    margin-bottom: .2rem;
+    margin-bottom: .5rem;
     text-shadow: .3rem .2rem $color-red-dark;
 
     &__title{

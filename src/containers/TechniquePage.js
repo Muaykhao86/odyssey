@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import VideoPlayer from '../components/VideoPlayer';
 import TechList from '../containers/TechList';
 import Scroll from '../components/Scroll';
 
 
-
-
-const TechniquePage = ({selectVideo, selectedVideo, videos}) => {
-  
+class TechniquePage extends Component{
+render(){
+  const {videos, selectedVideo, selectVideo} = this.props;
+  console.log({videos})
     return (
       <div className="techPage">
       <VideoPlayer selectedVideo={selectedVideo}/>
@@ -15,7 +15,8 @@ const TechniquePage = ({selectVideo, selectedVideo, videos}) => {
       <TechList videos={videos} selectVideo={selectVideo}/>
       </Scroll>
       </div>
-    );
+    )
+  }
   }
 
 
