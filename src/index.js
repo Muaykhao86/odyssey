@@ -19,7 +19,7 @@ const rootReducer = combineReducers({signIn, changePage, videoFilter});
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMiddleware)));//, logger
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMiddleware, logger)));//
 const supportsHistory = 'pushState' in window.history
 
 ReactDOM.render(

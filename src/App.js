@@ -22,7 +22,7 @@ import {requestSignIn, onPageChange} from './redux/actions';
   
 /////////connect(mapStateToProps, mapDispatchToProps)///////////////////////
 
-// What state it needs to listen to and send down as props
+
 const mapStateToProps = state => {
   return {
     isPending: state.signIn.isPending,
@@ -31,7 +31,6 @@ const mapStateToProps = state => {
     filtered: state.videoFilter.filtered
   }
 }
-// What props it should listen to that are actions, then dispatch it to the reducers as a prop function
 const mapDispatchToProps = (dispatch) => {
   return{
    requestSignIn:  (pass) => requestSignIn(pass)(dispatch),
@@ -64,10 +63,10 @@ const initialState = {
 
   LibraryList = (search) => {//Maybe changhe the libary list into a action/reducer then have the array thats returned form the list/ could pass the function as props???
     let array = [];
-    // let lowerSearch = search.toLowerCase();
+    let lowerSearch = search.toLowerCase();
      tech.forEach(obj => {
        let values = Object.values(obj);
-      return  values.includes(search) ?  array.push({title: obj['title'], url:obj['videoUrl'], id: obj['id']}) 
+      return  values.includes(lowerSearch) ?  array.push({title: obj['title'], url:obj['videoUrl'], id: obj['id']}) 
        : null
       })
      return array;
@@ -89,7 +88,7 @@ const initialState = {
       )} />
      )
     let filter = this.props.filtered;
-    console.log("wtf",this.LibraryList("Gi"))//WHY IS LIBRARY LIST NOT RENDERING GI OR NO GI THROUGH TECHNIQUE PAGE!!!!!!!!//=> => => this is because of ghe to lowercase and its searching ONLY for the term Gi, not Gi and No-Gi
+    console.log("wtf",this.LibraryList("Gi"))
     return (
           <div className="container">
           <ErrorBoundary>

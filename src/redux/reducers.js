@@ -56,7 +56,7 @@ export const videoFilter = (state=filteredVideos, action={}) => {
         case GI_TECH: 
             return Object.assign({}, state, {filtered: "gi"})
         case NO_GI_TECH: 
-            return Object.assign({}, state, {filtered: "no-gi"})
+            return Object.assign({}, state, {filtered: "no-gi, gi"})
         case DRILLS:
             return Object.assign({}, state, {filtered: "drills"})
         case SYLLIBUS:
