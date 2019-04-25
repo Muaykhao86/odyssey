@@ -13,6 +13,7 @@
     text-shadow: .3rem .2rem $color-red-dark;
 
     &__title{
+        text-transform: capitalize;
         text-align: center;
         margin: .2rem;
     }
