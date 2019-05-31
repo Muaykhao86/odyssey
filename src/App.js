@@ -87,7 +87,7 @@ const initialState = {
        : <Redirect to='/' />
       )} />
      )
-    let filter = this.props.filtered;
+    let {filtered, videos} = this.props;
     console.log("wtf",this.LibraryList("Gi"))
     return (
           <div className="container">
@@ -98,9 +98,9 @@ const initialState = {
                 <PrivateRoute path ="/Notes" component={Notes} />
                 <PrivateRoute path ="/Library" component={Library} />
                 <PrivateRoute path ="/LandingPage" component={LandingPage} />
-                <PrivateRoute path ="/FilteredTech" component={(props) => <TechniquePage {...props} videos={this.LibraryList(filter)} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
+                <PrivateRoute path ="/FilteredTech" component={(props) => <TechniquePage {...props} videos={this.LibraryList(filtered)} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
                 <PrivateRoute path ="/TechniquePage" component={(props) => <TechniquePage {...props} videos={this.LibraryList('back')} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
-                <PrivateRoute path ="/QuickTech" component={(props) => <TechniquePage {...props} videos={this.props.videos} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
+                <PrivateRoute path ="/QuickTech" component={(props) => <TechniquePage {...props} videos={videos} selectedVideo={this.state.selectedVideo} selectVideo={this.selectVideo} />}/>
       </Switch>
           </ErrorBoundary>
           </div>
