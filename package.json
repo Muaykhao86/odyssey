@@ -35,7 +35,7 @@
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   },
-  "root": "odyssey/build/",
+  "root": "/odyssey/build/",
   "clean_urls": false,
   "routes": {
     "/**": "index.html"
