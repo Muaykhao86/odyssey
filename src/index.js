@@ -25,7 +25,7 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMid
 ReactDOM.render(
 
     <Provider store={store}>
-    <Router basename="https://Muaykhao86.github.io/odyssey">
+    <Router basename="/odyssey">
     <App/>
     </Router>
     </Provider> ,document.getElementById('root')
