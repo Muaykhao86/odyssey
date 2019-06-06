@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/odyssey/precache-manifest.1c162f61516c8b9df298941104efd50d.js"
+  "/odyssey/precache-manifest.60faa749a0f3da4101d12add6ee84462.js"
 );
 
 workbox.clientsClaim();
